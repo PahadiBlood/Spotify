@@ -1,0 +1,39 @@
+.row{
+    /* display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2% 0; 
+    margin: 2%; */
+
+    display: grid;
+    /* border: 1px solid #ccc; */
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1% 2%;
+    margin: 1%;
+    gap: 16px;
+    grid-template-columns: [index] 16px [first] 6fr [var1] 4fr [var2] 3fr [last] minmax(120px,1fr);
+     /* 1fr .5fr .25fr .25fr; */
+}
+
+.row:hover{
+    background-color: #333;
+    border-radius: 5px;
+}
+
+.song-main{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.song-main > img{
+    /* float: left; */
+    /* margin-right: 5%; */
+}
+.album,.date-added,.duration{
+    justify-self: center;
+}
+.names{
+    display: flex; 
+    flex-direction: column;
+}

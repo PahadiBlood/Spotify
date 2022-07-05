@@ -1,0 +1,60 @@
+.main{
+    color: white;
+}
+.top-row{
+    display: grid;
+    grid-template-columns: [index] 16px [first] 6fr [var1] 4fr [var2] 3fr [last] minmax(120px,1fr);
+    padding: 0 32px;
+    gap: 16px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: #b3b3b3;
+}
+.hr-top-row{
+    border: none;
+    background: #403e3e;
+    width: 94%;
+    margin: 15px auto;
+    opacity: .4;
+    border-top: 3px solid #403e3e;
+    /* height: 10px*/
+}
+.main-icons{
+    display: flex;
+    align-items: center;
+    padding: 2%;
+}
+.green-icon{
+    color: green;
+    margin-right: 2%;
+}
+.green-icon:hover{
+    transform: scale(1.1);
+}
+.large{
+    font-size: 5em;
+}
+
+.more-icon{
+    opacity: 0.7;
+}
+
+.more-icon:hover{
+    opacity: 1;
+}
+
+.clock{
+    justify-self: center;
+}
+
+
+
+
+@media screen and (max-screen: 767px) {
+    .top-row:nth-child(3),.top-row span:nth-child(4){
+        display: none;
+    }
+    .main{
+        background-color: red;
+    }
+}

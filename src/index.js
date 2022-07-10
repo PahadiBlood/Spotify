@@ -1,12 +1,26 @@
-import React from 'react';
+import React, { useReducer } from 'react';
 import ReactDOM from 'react-dom';
+import * as ReactDOMClient from "react-dom/client";
+
 import './index.css';
 import App from './App';
+import { DataLayer } from "./components/dataLayer";
+import reducer,{ initialValue } from "./components/reducer";
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from 'react-router-dom';
 
-ReactDOM.render(
+const rootElement = document.getElementById("root");
+const root = ReactDOMClient.createRoot(rootElement);
+
+// const [state,dispatch]=useReducer(reducer,initialValue);
+
+root.render(
   <React.StrictMode>
-    <App />
+  <BrowserRouter>
+    <DataLayer initialValue={initialValue} reducer={reducer}>
+      <App />
+    </DataLayer>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

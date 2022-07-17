@@ -1,11 +1,12 @@
 export const initialValue={
     user: null,
-    token:null,
+    token:"BQAMbee3bmZSTthQlg9oF_8NJi0ETXgSGLeNLaF-0vLRMYfJSul3RgemI8NATncCKNP2tJYc6PoiVmyonUuVSmkQgmzs3ljDgF53ftngQjhogvFJO8KgdRwRc9zFnsojFQHO5BfrUxoY8JukoH6vOB8guZJ97eWoWFlOZZdaT8PTTKaKbezOAejctGVWHByRSrc",
     playlists: [],
     new_playlist:[],
     playing:false,
     item:null,
-    isPlaying: false
+    isPlaying: false,
+    currentSong:{}
   };
   
   function reducer(state,action) {
@@ -44,6 +45,11 @@ export const initialValue={
           return{
             ...state,
             isPlaying: action.isPlaying
+          }  
+        case "SET_SONG":
+          return{
+            ...state,
+            currentSong: action.currentSong
           }  
         default: 
     console.log('token',state.token)

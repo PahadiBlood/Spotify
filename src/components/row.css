@@ -37,3 +37,8 @@
     display: flex; 
     flex-direction: column;
 }
+
+.names .singer{
+    font-size: small;
+    opacity: 0.5;
+}

@@ -94,16 +94,9 @@
   .header{
     height: 50vh;
   }
-  .footer {
-    height: 10vh;
-  }
+  
   
   /********* footer *************/
   
-  .footer {
-    position: sticky;
-    bottom: 0;
-    width: 100%;
-    background-color: black;
-  }
+  
   

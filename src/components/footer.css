@@ -1,0 +1,35 @@
+.footer {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    
+    height: 20vh;
+    padding: 1% 2%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1%;
+}
+
+.footer .left{
+    display: flex;
+    width: 30%;
+    border: 1px solid azure;
+    gap: 4%;
+
+}
+
+.footer .left .song-pic{
+    border-radius: 5%;
+}
+
+.footer .center{
+    width: 45%;
+    border: 1px solid indianred;
+}
+
+.footer .right{
+    width: 25%;
+    border: 1px solid red;
+}

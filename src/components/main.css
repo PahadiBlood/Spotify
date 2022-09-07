@@ -10,6 +10,10 @@
     letter-spacing: .1em;
     color: #b3b3b3;
 }
+.top-row .album,.top-row .date{
+    justify-self: center;
+}
+
 .hr-top-row{
     border: none;
     background: #403e3e;
@@ -56,5 +60,22 @@
     }
     .main{
         background-color: red;
+    }
+}
+
+
+
+@media screen and (min-width: 767px) and (max-width: 1024px){
+    span.album{
+        justify-self: left;
+    }
+}
+@media screen and (max-width: 767px) {
+    span.album,span.date-added,span.mobile-hide{
+        display: none;
+    }
+
+    .main .row,.main .top-row{
+        grid-template-columns: 16px 16fr minmax(120px,1fr);
     }
 }

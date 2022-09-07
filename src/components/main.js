@@ -18,9 +18,6 @@ export default function Main() {
     
     console.log("data of song",song)
     
-    
-   
-    
     // spotify.getMyCurrentPlayingTrack(e).then((data)=>{
     //   console.log("song",e);
       dispatch({
@@ -41,9 +38,9 @@ export default function Main() {
     </div>
     <div className="top-row">
       <span>#</span>
-      <span>title</span>
-      <span>album</span>
-      <span>date added</span>
+      <span >title</span>
+      <span className='mobile-hide album'>album</span>
+      <span className='mobile-hide date'>date added</span>
       <span className="clock"><AccessTimeIcon/></span>
     </div>
     <hr className='hr-top-row'/>

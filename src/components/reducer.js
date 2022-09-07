@@ -1,7 +1,6 @@
 export const initialValue={
     user: null,
-    token:"BQAMbee3bmZSTthQlg9oF_8NJi0ETXgSGLeNLaF-0vLRMYfJSul3RgemI8NATncCKNP2tJYc6PoiVmyonUuVSmkQgmzs3ljDgF53ftngQjhogvFJO8KgdRwRc9zFnsojFQHO5BfrUxoY8JukoH6vOB8guZJ97eWoWFlOZZdaT8PTTKaKbezOAejctGVWHByRSrc",
-    playlists: [],
+    token: null,
     new_playlist:[],
     playing:false,
     item:null,

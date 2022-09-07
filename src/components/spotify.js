@@ -28,7 +28,7 @@ export  const getTokenFromUrl=()=>{
    initial[parts[0]]=decodeURIComponent(parts[1]); 
    return initial;
   },{})
-  // console.log('value',value);
+  console.log('value',value);
   return value;
 }
 

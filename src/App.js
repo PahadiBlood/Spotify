@@ -16,8 +16,8 @@ export default function App() {
   // const [state,dispatch]=useReducer(reducer,initialValue);
   useEffect(() => {
     const hash = getTokenFromUrl();
-    window.location.hash='';
-    // console.log("printsomething",hash);
+    // window.location.hash='';
+    // console.log("printsometash);
     const _token = hash.access_token;
 
     if (_token) {
@@ -26,17 +26,17 @@ export default function App() {
           type: "SET_TOKEN",
           token:_token,
         })
-    
-    spotify.setAccessToken(_token);
-
-    spotify.getMe().then((user)=>{
-     dispatch({
-      type: 'SET_USER',
-      user: user 
-      })
-    })
-  
-    
+        
+        spotify.setAccessToken(_token);
+        
+        spotify.getMe().then((user)=>{
+          dispatch({
+            type: 'SET_USER',
+            user: user 
+          })
+        })
+        
+        
     spotify.getUserPlaylists().then((playlist)=>{
      dispatch({
         type: "SET_PLAYLIST",
@@ -57,6 +57,7 @@ export default function App() {
   // console.log("context",state.playlist);
   
 }, []);
+// console.log("get token",state_token);
   console.log("token", user);
 
   return (

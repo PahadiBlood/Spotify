@@ -9,13 +9,14 @@ function Row({playlist,index,callback}) {
       return str.split(" ").splice(0,no_words).join(" ")+"...";
     }
     let album_name= playlist?.track.album.name.split(" ").length>3 ? truncate(playlist?.track.album.name,3) : playlist?.track.album.name;
+    let song_name= playlist?.track.name.split(" ").length>3 ? truncate(playlist?.track.name,3) : playlist?.track.name;
   return (
     <div className='row' onClick={callback} >
       <span className='index'>{index+1}</span>
       <div className='song-main'>
           <img src={playlist?.track.album.images[2].url} alt="" width=""/>
           <div className='names'>
-              <span className='song'>{playlist?.track.name} </span>
+              <span className='song'>{song_name} </span>
               <span className='singer'>{playlist?.track.album.artists[0].name}</span>
           </div>
       </div>

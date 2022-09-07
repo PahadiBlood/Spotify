@@ -5,6 +5,7 @@
     padding: 2% 0; 
     margin: 2%; */
 
+    cursor: pointer;
     display: grid;
     /* border: 1px solid #ccc; */
     justify-content: flex-end;

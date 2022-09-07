@@ -64,6 +64,18 @@
   .sidebar-options_listIcon{
     margin-right: 5%;
   }
+
+@media screen and (max-width: 1024px) {
+  .sidebar-options_list{
+    font-size: 80%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+.sidebar{
+  display: none;
+}
+}
   
   .playlist-title{
     margin-left: 10px;
